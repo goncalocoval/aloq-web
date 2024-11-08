@@ -1,6 +1,7 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
+import emailjs from 'emailjs-com';
 import { ContactProps, ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
 import validate from "../../common/utils/validationRules";
@@ -17,6 +18,27 @@ const Email = ({ title, content, id, t }: ContactProps) => {
     return <Span>{ErrorMessage}</Span>;
   };
 
+  // Modificar o handleSubmit para incluir o envio de email pelo EmailJS
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs.send(
+      'service_7wcadtv',    // Substitua pelo seu Service ID do EmailJS
+      'template_lr626od',   // Substitua pelo seu Template ID do EmailJS
+      {
+        name: values.name,
+        email: values.email,
+      },
+      'DvHqatJot8uIRZOs0'        // Substitua pelo seu User ID do EmailJS
+    ).then((response) => {
+        console.log("Email enviado com sucesso!", response.status, response.text);
+        alert("Subscription successful! Check your email for confirmation.");
+    }).catch((error) => {
+        console.error("Erro ao enviar o email:", error);
+        alert("Failed to send the email. Please try again later.");
+    });
+  };
+
   return (
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">
@@ -27,7 +49,7 @@ const Email = ({ title, content, id, t }: ContactProps) => {
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right" triggerOnce>
-            <FormGroup autoComplete="off" onSubmit={handleSubmit}>
+            <FormGroup autoComplete="off" onSubmit={onSubmit}>
               <Col span={24}>
                 <Input
                   type="text"
@@ -40,7 +62,7 @@ const Email = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <Input
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="Your or Company Email"
                   value={values.email || ""}
