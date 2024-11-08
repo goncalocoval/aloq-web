@@ -23,7 +23,7 @@ const Email = ({ title, content, id, t }: ContactProps) => {
     e.preventDefault();
 
     emailjs.send(
-      'service_7wcadtv',    // Substitua pelo seu Service ID do EmailJS
+      'service_p978f6r',    // Substitua pelo seu Service ID do EmailJS
       'template_lr626od',   // Substitua pelo seu Template ID do EmailJS
       {
         name: values.name,
@@ -31,10 +31,8 @@ const Email = ({ title, content, id, t }: ContactProps) => {
       },
       'DvHqatJot8uIRZOs0'        // Substitua pelo seu User ID do EmailJS
     ).then((response) => {
-        console.log("Email enviado com sucesso!", response.status, response.text);
         alert("Subscription successful! Check your email for confirmation.");
     }).catch((error) => {
-        console.error("Erro ao enviar o email:", error);
         alert("Failed to send the email. Please try again later.");
     });
   };
