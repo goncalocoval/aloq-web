@@ -11,7 +11,7 @@ import Input from "../../common/Input";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
 const Email = ({ title, content, id, t }: ContactProps) => {
-  const { values, errors, handleChange, handleSubmit } = useForm(validate);
+  const { values, errors, handleChange } = useForm(validate);
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
     const ErrorMessage = errors[type as keyof typeof errors];
