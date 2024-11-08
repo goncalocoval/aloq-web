@@ -1,0 +1,16 @@
+{
+  "title": "What is Aloq?",
+  "text": "Aloq is an innovative platform designed to help startups and businesses choose between incubators and tech parks. With so many options available, selecting the best alternative can be challenging. We use a smart, criteria-based approach to make the process quick, easy, and accurate. From cost analysis to public transportation accessibility, our platform guides you through every step of the decision-making process.",
+  "section": [
+    {
+      "title": "The logo",
+      "content": "As simple as it seems, this is not only the name of our platform, but also a call to new users (A and L) to get in (O), becoming a part of Aloq (Q).",
+      "icon": "new-logo.svg"
+    },
+    {
+      "title": "Why us?",
+      "content": "Aloq simplifies choosing the perfect workspace by using smart, criteria-based analysis to deliver tailored recommendations, helping your business grow in the right environment.",
+      "icon": "notes.svg"
+    }
+  ]
+}
