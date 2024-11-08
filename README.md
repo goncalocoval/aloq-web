@@ -1,113 +1,60 @@
-![landy](https://user-images.githubusercontent.com/48876996/121569479-e179db80-ca31-11eb-8a48-9c3de9b142f3.gif)
+# Aloq - Website de Apresentação
 
-![Landy React Template License](https://img.shields.io/github/license/Adrinlol/landy-react-template)
-![Landy React Template Release Date](https://img.shields.io/github/release-date/Adrinlol/landy-react-template)
-![Landy React TemplateStars](https://img.shields.io/github/stars/Adrinlol/landy-react-template)
-![Landy React Template Language](https://img.shields.io/github/languages/top/Adrinlol/landy-react-template)
-![Landy React Template TypeScript](https://badgen.net/npm/types/tslib)
+[![Aloq Website](https://img.shields.io/badge/access-Aloq%20Website-blue?style=for-the-badge&logo=google-chrome)](https://aloq-web.pages.dev/)
 
-## Free React landing page template
+Bem-vindo ao repositório do **Website de Apresentação da Aloq**. Este site foi desenvolvido para promover a plataforma Aloq, uma solução inovadora voltada para startups e empresas em crescimento que precisam de auxílio na escolha de incubadoras e parques tecnológicos.
 
-[Landy][Landy] is an open-source React landing page template written in TypeScript, designed for developers and startups, who want to create a quick and professional landing page for their business or project.
+Acesse o website da Aloq: [https://aloq-web.pages.dev/](https://aloq-web.pages.dev/)
 
-This React template comes with multi-lingual support, smooth animations, set of ready to use sections and most importantly, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in React.js.
+---
 
-## Table of contents
+## 📝 Propósito do Website
 
-- [Features](#features)
-- [Google Lighthouse](#google-lighthouse)
-  - [Performance](#performance)
-  - [Accessibility](#accessibility)
-  - [Best Practices](#best-practices)
-  - [SEO](#seo)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Special Thanks](#special-thanks)
-- [Usage](#usage)
-- [License](#license)
+O **Website de Apresentação da Aloq** é um ponto de contato inicial com startups e empresas interessadas na plataforma Aloq, que será lançada em 2025. O site apresenta informações importantes sobre o propósito da plataforma, seu funcionamento, e o que a torna uma solução valiosa para empresas que buscam o espaço ideal para expandir.
 
-## Features
+### Principais Funcionalidades:
 
-Your project will have everything you need to build a modern single-page React app:
+- **Seções Informativas**: Inclui informações sobre a missão, valores e objetivos da Aloq, detalhando como a plataforma pode ajudar empresas a encontrar o local ideal para seu desenvolvimento.
+- **Funcionamento da Plataforma**: Explicação sobre o uso do método AHP (Analytic Hierarchy Process) e os critérios que podem ser selecionados pelos clientes para escolher o espaço mais adequado.
+- **Equipe**: Apresentação da equipe de desenvolvimento e fundadores por trás do projeto Aloq.
+- **Formulário de Subscrição**: Oferece aos visitantes a possibilidade de subscreverem-se para receber atualizações sobre o lançamento e funcionalidades da Aloq.
 
-- 🎁 **Modern** – Template created using the latest features of React (State management using Hooks, Code-Splitting to reduce the bundle size)
+---
 
-- 💻 **Responsive** – Highly responsive and reusable UI components, that change depending on the provided props
+## 🚀 Funcionalidade de Subscrição por Email
 
-- 🚀 **Fast** – Buttery smooth experience thanks to the implementation of best practices and no third party dependencies, resulting in <b>PERFECT</b> Google Lighthouse scores
+O site inclui um **formulário de subscrição por email**, onde as startups e empresas interessadas podem registrar-se para receber informações sobre o lançamento e outras novidades da Aloq. 
 
-- 🏷 **TypeScript support** – Landy is written in TypeScript to improve the DX
+- **Como Funciona**:
+   - O visitante insere o nome da empresa e o email.
+   - Ao submeter, um email é enviado automaticamente para o administrador do site, notificando uma nova inscrição.
+   - Simultaneamente, o visitante recebe um email de confirmação agradecendo pela preferência e avisando sobre o lançamento da Aloq em 2025.
 
-- 🌍 **Internationalization** - Prebuilt standalone file that works in every environment and doesn't require reloading the page to translate the content
+Essa funcionalidade foi implementada com o serviço **EmailJS**, que permite o envio de emails diretamente do frontend, sem a necessidade de um backend para processar as requisições.
 
-- 🛸 **Routing** - Each file inside the src/pages directory will generate its own route, so you don't have to manually handle the routing
+---
 
-- 🤙 **Contact Form** - Contact form written in React Hooks, with uncontrolled form validation to reduce unnecessary performance penalty. You just need to provide the endpoint
+## 🛠 Tecnologias Utilizadas
 
-- ⚙️ **Maintenance** - All of the content is stored in the JSON files, so that you can easily manage the content of the website
+- **React**: Biblioteca JavaScript para construção da interface do usuário.
+- **EmailJS**: Serviço para envio de emails direto do frontend.
+- **Ant Design**: Biblioteca de componentes para estilização e design.
+- **React Awesome Reveal**: Biblioteca para animações de scroll.
 
-## Google Lighthouse
+---
 
-![1](https://user-images.githubusercontent.com/48876996/121569366-c313e000-ca31-11eb-940c-187f556ff0d6.png)
+## 🌐 Deploy
 
-[Google Lighthouse][Google Lighthouse] is an open-source, automated tool for measuring the quality of web pages. Google Lighthouse audits performance, accessibility and search engine optimization of web pages.
+O site está hospedado em **Cloudflare Pages** para garantir rapidez e estabilidade no carregamento. Acesse o site em: [https://aloq-web.pages.dev/](https://aloq-web.pages.dev/)
 
-### Performance
+---
 
-Audits for metrics like first paint and time to interactive to determine lag.
+## 📥 Contribuições
 
-### Accessibility
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma **issue** ou enviar um **pull request** com sugestões de melhorias ou correções.
 
-Checks for common issues that may prevent users from accessing your content.
+---
 
-### Best Practices
+## 📄 Licença
 
-Looks for everything from HTTPS usage to correct image aspect ratios.
-
-### SEO 
-
-Checks for best practices to ensure your site is discoverable.
-
-
-## Demo
-
-Check the live demo here 👉️ https://landy-web.netlify.app/
-
-
-### Installation
-
-You’ll need to have Node 10.16.0 or later version on your local development machine (but it’s not required on the server). I recommend using the latest LTS version.
-
-To create a new app, you have to:
-
-Begin by cloning this repository to establish your own local copy. This process is straightforward and ensures you have all the necessary files and resources at your fingertips. You can find step-by-step instructions in this helpful article: Cloning a [repository on GitHub.com](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
-
-## What's included
-
-- [antd][antd] - React UI library that contains a set of high quality components.
-- [react-awesome-reveal][react-awesome-reveal] - High performance library that adds reveal animations using the Intersection Observer API.
-- [styled-componets][styled-componets] - Variant on “CSS-in-JS”—which solves many of the problems with traditional CSS.
-- [i18next][i18next] - Internationalization-framework written in and for JavaScript.
-
-## Special thanks
-
-[whoooa][whoooa] - Use fantastic, handmade illustrations with easily changeable colors and different styles.
-
-## Usage
-
-Use it for whatever you want, and be sure to reach out to me on [Twitter](https://twitter.com/Adrinlolx) if you have any questions, or build something cool with it.
-
-## License
-
-Licensed under the MIT license.
-
-<!-- prettier-ignore-start -->
-[antd]: https://github.com/ant-design/ant-design
-[react-awesome-reveal]: https://www.npmjs.com/package/react-awesome-reveal
-[styled-componets]: https://github.com/styled-components/styled-components
-[i18next]: https://github.com/i18next/i18next
-[whoooa]: https://www.whoooa.rocks/
-[Landy]: https://www.npmjs.com/package/cra-template-adrinlol
-[Google Lighthouse]: https://developers.google.com/web/tools/lighthouse
-<!-- prettier-ignore-end -->
-# aloq-web
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
