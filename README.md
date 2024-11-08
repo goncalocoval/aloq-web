@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/img/logo-nobg.png" alt="Aloq Logo" width="100"/>
+</p>
+
 # Aloq - Website de Apresentação
 
 [![Aloq Website](https://img.shields.io/badge/access-Aloq%20Website-blue?style=for-the-badge&logo=google-chrome)](https://aloq-web.pages.dev/)
@@ -16,8 +20,14 @@ O **Website de Apresentação da Aloq** é um ponto de contato inicial com start
 
 - **Seções Informativas**: Inclui informações sobre a missão, valores e objetivos da Aloq, detalhando como a plataforma pode ajudar empresas a encontrar o local ideal para seu desenvolvimento.
 - **Funcionamento da Plataforma**: Explicação sobre o uso do método AHP (Analytic Hierarchy Process) e os critérios que podem ser selecionados pelos clientes para escolher o espaço mais adequado.
-- **Equipe**: Apresentação da equipe de desenvolvimento e fundadores por trás do projeto Aloq.
+- **Equipa**: Apresentação da equipa de desenvolvimento e fundadores por trás do projeto Aloq.
 - **Formulário de Subscrição**: Oferece aos visitantes a possibilidade de subscreverem-se para receber atualizações sobre o lançamento e funcionalidades da Aloq.
+
+---
+
+## 🌍 Idioma do Site
+
+O website está em **inglês**, uma vez que é uma linguagem universal que vai ao encontro dos objetivos globais da Aloq, que é destinada a qualquer utilizador. Ao usar o inglês como idioma principal, garantimos maior acessibilidade e praticidade para um público diversificado.
 
 ---
 
