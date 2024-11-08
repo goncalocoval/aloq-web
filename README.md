@@ -52,9 +52,3 @@ O site está hospedado em **Cloudflare Pages** para garantir rapidez e estabilid
 ## 📥 Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma **issue** ou enviar um **pull request** com sugestões de melhorias ou correções.
-
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
