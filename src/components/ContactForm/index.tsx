@@ -1,11 +1,9 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
-import { ContactProps, ValidationTypeProps } from "./types";
-import { useForm } from "../../common/utils/useForm";
-import validate from "../../common/utils/validationRules";
+import { ContactProps } from "./types";
 import Block from "../Block";
-import { ContactContainer, Span, ProfilePicture, TeamContainer, TeamMemberC, Role } from "./styles";
+import { ContactContainer, ProfilePicture, TeamContainer, TeamMemberC, Role } from "./styles";
 
 interface TeamMember {
   id: number;
@@ -24,7 +22,6 @@ const teamMembers: TeamMember[] = [
 ];
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
-  const { errors } = useForm(validate);
 
   return (
     <ContactContainer id={id}>

@@ -1,17 +1,10 @@
 import { Row } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
-import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 
-import i18n from "i18next";
 import {
   Extra,
 } from "./styles";
-
-interface SocialLinkProps {
-  href: string;
-  src: string;
-}
 
 const Footer = ({ t }: { t: TFunction }) => {
 
