@@ -7,6 +7,7 @@ import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
+const Email = lazy(() => import("../../components/EmailForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
@@ -61,7 +62,11 @@ const Home = () => {
         id="contact"
       />
 
-      
+      <Email
+        title={"Subscribe Us"}
+        content={"Be the first to know about the latest news and updates of Aloq, getting early access to the platform on launch day!"}
+        id="email"
+      />
       
     </Container>
   );
