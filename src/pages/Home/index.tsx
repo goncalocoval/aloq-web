@@ -11,7 +11,6 @@ const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
-const Team = lazy(() => import("../../components/Team"));
 const ProductBlock = lazy(() => import("../../components/ProductBlock"));
 
 const Home = () => {

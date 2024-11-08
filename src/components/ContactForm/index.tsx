@@ -4,11 +4,8 @@ import { Slide } from "react-awesome-reveal";
 import { ContactProps, ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
 import validate from "../../common/utils/validationRules";
-import { Button } from "../../common/Button";
 import Block from "../Block";
-import Input from "../../common/Input";
-import TextArea from "../../common/TextArea";
-import { ContactContainer, FormGroup, Span, ButtonContainer, ProfilePicture, TeamContainer, TeamMemberC, Role } from "./styles";
+import { ContactContainer, Span, ProfilePicture, TeamContainer, TeamMemberC, Role } from "./styles";
 
 interface TeamMember {
   id: number;
@@ -27,12 +24,7 @@ const teamMembers: TeamMember[] = [
 ];
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
-  const { values, errors, handleChange, handleSubmit } = useForm(validate);
-
-  const ValidationType = ({ type }: ValidationTypeProps) => {
-    const ErrorMessage = errors[type as keyof typeof errors];
-    return <Span>{ErrorMessage}</Span>;
-  };
+  const { errors } = useForm(validate);
 
   return (
     <ContactContainer id={id}>
